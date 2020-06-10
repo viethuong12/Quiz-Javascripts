@@ -1,0 +1,97 @@
+*{
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: #008080af;
+            font-size: 15px;
+        }
+        
+        header{
+            border-radius: 10px;
+            text-align: center;
+            height: 80px;
+            background-color: white;
+            padding: 3px;
+        }
+
+        .logo{
+            width: 55px;
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+
+        }
+        .start-section{
+            font-size: 18px;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        .options{
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 5px 5px #a3c2c2;
+            position: relative;
+        }
+       
+        p{
+            font-size: 15px;
+            text-align: center;
+        }
+       
+        .quiz-box{
+			
+            background-color: lightblue;
+            margin:50px auto;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 5px 5px #a3c2c2;
+            position: relative;
+        }
+
+        .options ul{
+            padding: 0px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+          
+        } 
+
+        .options ul button.correct{
+	background-color: #0fd40f;
+	
+		}
+
+		.options ul button.wrong{
+	background-color: #e91e1e;
+	
+		}
+
+        .score{
+
+            float: bottom;
+            padding:25px 0px;
+
+        }
+        .score .next{
+            width: 40%;
+            float: left;
+            padding: 15px;
+        }
+        
+       .next button{
+			background-color: lightblue;
+            color:blue;
+            border:none;
+            border-radius:8px;
+            font-size: 15px;
+            cursor: pointer;
+            outline: none;
+        }
