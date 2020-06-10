@@ -1,0 +1,21 @@
+{
+  "name": "Quiz App",
+  "short_name": "Quiz",
+  "lang": "de-DE",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "theme_color": "lightblue",
+  "background_color": "#2A3443",
+  "icons": [
+    {
+      "src": "https://www.android-user.de/wp-content/uploads/2014/01/33432-icon-quizduell-app.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.dribbble.com/users/565332/screenshots/2877927/quiz4-logo-dribble.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
