@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  	
+  	<link rel="manifest" href="/manifest.json">
+     	<meta charset="UTF-8">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Quiz">
+	<meta name="apple-mobile-web-app-title" content="Quiz">
+	<meta name="theme-color" content="lightblue">
+	<meta name="msapplication-navbutton-color" content="lightblue">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="msapplication-starturl" content="/index.html">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="icon" type="image/png" sizes="192x192" href="https://www.android-user.de/wp-content/uploads/2014/01/33432-icon-quizduell-app.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="192x192" href="https://www.android-user.de/wp-content/uploads/2014/01/33432-icon-quizduell-app.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://cdn.dribbble.com/users/565332/screenshots/2877927/quiz4-logo-dribble.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="192x192" href="https://cdn.dribbble.com/users/565332/screenshots/2877927/quiz4-logo-dribble.png">
+
+    <!-- kaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+ 
+    <title>Quiz</title>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  </head>
+  <body>
+    
+    <header role="banner">
+      <h1> <img src="quiz.jpg" alt="JavaScript logo image" class="logo"></h1>
+    </header>
+
+<nav>
+    <ul id="navi">
+        <li><a href="index.html" title="Zurück zur Startseite">Home</a></li>
+    </ul>
+</nav>
+
+
+<main role="main">
+    <section class="start-section" id="start"> 
+        <p> Funny Quiz </p>
+        <form>
+            <label><input type="radio" id="math" name="math-allgemein" onclick="app.load()"> Mathe</label>
+            <label><input type="radio" id="allgemein" name="math-allgemein" onclick="app.load()"> Allgemein</label><br>
+        </form>
+   </section>
+
+    <div id="status"></div>
+
+    <section class="quiz-box">
+        <div class="question" id="questionBox"></div>
+
+        <div class="options" id="box">
+            <ul id="ul">
+                <button id="op1"onclick="button(this)"></button>
+                <button id="op2"onclick="button(this)"></button>
+                <button id="op3"onclick="button(this)"></button>
+                <button id="op4"onclick="button(this)"></button>
+
+            </ul>
+
+            <p id="text">Wähle die passende Lösung!</p>
+            <hr style="margin-top: 20px">
+
+            <div class="score">
+                <div class="next">
+                    <button type="button" onclick="next()" id="button">Next</button>
+                </div><br>
+                <div class="score-card">Score: <span id="scoreCard">0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<script src="script.js"></script>
+<aside>
+    <p>Eine Sidebar</p>
+</aside>
+
+<footer>Mathematik lernen</footer>
+
+
+
+  </body>
+</html>
